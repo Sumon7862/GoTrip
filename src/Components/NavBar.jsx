@@ -12,51 +12,52 @@ const Navbar = () => {
         const scroll = () => {
             if (window.scrollY >= 50) {
                 setScroll(true)
-                // console.log("fffff");
 
             } else {
                 setScroll(false)
-                // console.log('hhhh');
             }
         }
         window.addEventListener('scroll', scroll)
     }, [])
 
     return (
-        <nav className={` ${scroll ? 'bg-gray-500' : ''} fixed duration-300 top-0 w-full z-50 px-8 py-4`}>
-            <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <nav className={` ${scroll ? 'bg-[#02044A]' : ''} fixed duration-300 top-0 w-full z-50 px-8 py-4`}>
+            <div className="container">
+                <div className="max-w-7xl mx-auto flex items-center justify-between">
 
-                {/* Left Logo */}
+                    {/* Left Logo */}
                 <div className="cursor-pointer">
-                    <img src={Logo} alt="" />
+                    <img src={Logo} alt="logo" />
                 </div>
 
-                {/* Center Menu */}
-                <ul className="hidden md:flex items-center gap-8 font-medium text-primary">
-                    <li className="cursor-pointer hover:text-blue-900">Home</li>
-                    <li className="cursor-pointer hover:text-blue-900">Categories</li>
-                    <li className="cursor-pointer hover:text-blue-900">Destination</li>
-                    <li className="cursor-pointer hover:text-blue-900">Blog</li>
-                    <li className="cursor-pointer hover:text-blue-900">Pages</li>
-                    <li className="cursor-pointer hover:text-blue-900">Contact</li>
-                </ul>
+                
+                
+
 
                 {/* Right Buttons */}
                 <div className="flex items-center gap-4">
 
-                    {/* Search Icon */}
-                    <CiSearch className="w-6.25 h-6.25 cursor-pointer text-primary" />
+                    {/* Center Menu */}
+                <ul className="hidden md:flex items-center gap-8 font-medium text-white text-[15px]">
+                    <li className="cursor-pointer">Home</li>
+                    <li className="cursor-pointer">Categories</li>
+                    <li className="cursor-pointer">Destination</li>
+                    <li className="cursor-pointer">Blog</li>
+                    <li className="cursor-pointer">Pages</li>
+                    <li className="cursor-pointer">Contact</li>
+                </ul>
 
                     {/* Become Expert */}
-                    <button className="bg-primary border border-primary text-white hover:text-primary px-5 py-2 rounded-sm text-sm font-medium hover:bg-transparent transition">
+                    <button className="border border-white px-5 py-2 rounded-sm text-white text-sm font-medium hover:bg-white hover:text-primary transition cursor-pointer">
                         Become An Expert
                     </button>
 
                     {/* Sign In */}
-                    <button className="border border-primary px-5 py-2 rounded-sm text-primary text-sm font-medium hover:bg-primary hover:text-white transition">
+                    <button className="border border-white px-5 py-2 rounded-sm text-white text-sm font-medium hover:bg-white hover:text-primary transition cursor-pointer">
                         Sign In / Register
                     </button>
                 </div>
+            </div>
             </div>
         </nav>
     );

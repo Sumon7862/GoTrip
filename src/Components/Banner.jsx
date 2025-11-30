@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CiSearch } from "react-icons/ci";
-import SilkSlider from '../components/SilkSlider';
+import SlickSlider from './SlickSlider';
 
 
 const Banner = () => {
@@ -14,13 +14,13 @@ const Banner = () => {
     };
 
     return (
-        <section className='heroBg'>
+        <section>
             <div className='container'>
                 <div className='text-center pt-49.5'>
                     <h1 className='text-[60px] font-semibold '>
-                        Search for the Best Car Hire Deals
+                        Find Your Dream Luxury Hotel
                     </h1>
-                    <p className='pt-1.5 pb-6.25'>Book better cars from local hosts across the US and around the world.</p>
+                    <p className='pt-1.5 pb-6.25'>Discover amzaing places at exclusive deals</p>
                 </div>
 
                 <div className="p-4 bg-white shadow-lg rounded-sm max-w-5xl mx-auto relative z-20 top-7">
@@ -96,7 +96,7 @@ const Banner = () => {
 
                 <div className='relative h-100'>
                     <div className='absolute w-full -top-5 left-0'>
-                        <SilkSlider />
+                        <SlickSlider />
                     </div>
                 </div>
 

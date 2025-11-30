@@ -33,15 +33,6 @@
   }
 }
 
-.heroBg {
-  background-image: url(./assets/bgImg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: full;
-
-}
-
 .slick-next {
   margin-right: 50px;
 }

@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import HeroImg from "../assets/heroCar.png";
 
 
-export default function SilkSlider() {
+export default function SlickSlider() {
     var settings = {
         dots: false,
         infinite: true,
