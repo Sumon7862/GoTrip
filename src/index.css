@@ -25,7 +25,13 @@
   /* Colors */
   --color-primary: #051036;
 
+  --color-textClr1: #051036;
+  --color-textClr2: #697488;
+  --color-textClr3: #3554d1;
+  /* ==================================== */
 }
+
+
 
 @layer utility {
   .container {
